@@ -48,6 +48,7 @@ function dodatniOpis(n)
     let tekst;
     switch(n)
     {
+        /*dodajte za case-ove vece od 2 neki vaš kratak opis domaće životinje...*/
         case 1:
             tekst = "<h1 id='naslov'>ПАС</h1><p>Пас је најстарија домаћа животиња. Одана је човеку. Има добро развијено памћење и чуло мириса. Оглашава се лајањем.</p>";
             break;
