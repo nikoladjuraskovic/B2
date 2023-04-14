@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocetna</title>
+    <link rel="stylesheet" type="text/css" href="dizajn.css"/>
+    <script type="text/javascript" src="kod.js"></script>
+</head>
+<body id="pocetna">
+    <header>
+        <span class="naslovi">ДOМАЋЕ ЖИВОТИЊЕ</span>
+            <ul>
+                <li><a class="active" href="#">Почетна</a></li>
+                <li><a href="autor.html">О аутору</a></li>
+                <li><a href="uputstvo.html">Упутство</a></li>
+            </ul>
+    </header>
+   
+    <main>
+        <audio id="zvuk" src=""></audio>
+            
+                <img src="slike/pas.jpg" onmouseover="pustiZvuk('pas')"
+                onmouseout="zaustavi()"onclick="dodatniOpis(1)"/>            
+            
+                <img src="slike/ovca.jpg" onmouseover="pustiZvuk('ovca')"
+                onmouseout="zaustavi()" onclick="dodatniOpis(2)"/>            
+            
+                <img src="slike/prase.jpg" onmouseover="pustiZvuk('prase')"
+                onmouseout="zaustavi()" onclick="dodatniOpis(3)" />
+            
+                <img src="slike/petao.jpg" onmouseover="pustiZvuk('petao')"
+                onmouseout="zaustavi()" onclick="dodatniOpis(4)"/>
+            
+                <img src="slike/krava.jpg" onmouseover="pustiZvuk('krava')"
+                onmouseout="zaustavi()" onclick="dodatniOpis(5)"/>
+
+    </main>
+    <footer>
+        <p>Copyright &copy Предшколска Установа "Срећно дете"</p>
+    </footer>
+</body>
+</html>

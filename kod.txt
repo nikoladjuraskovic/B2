@@ -1,0 +1,21 @@
+function pustiZvuk(nazivFajla)
+{
+        document.getElementById("zvuk").src="zvuci/"+nazivFajla+".wav";
+        document.getElementById("zvuk").play();
+}
+function zaustavi()
+{
+        document.getElementById("zvuk").pause();
+}
+
+function dodatniOpis(brSlike)
+{
+        var opisi=["<h1>PAS</h1><p>Ovde napisati opis psa.</p>",
+        "<h1>OVCA</h1><p>Ovde napisati opis ovce.</p>",
+        "<h1>PRASE</h1><p>Ovde napisati opis praseta.</p>",
+        "<h1>PETAO</h1><p>Ovde napisati opis petla.</p>",
+        "<h1>KRAVA</h1><p>Ovde napisati opis krave.</p>"];
+        var cssLink="<link rel='stylesheet' type='text/css' href='dizajn.css'/>";
+        var prozor=window.open('','','width=400,height=350,top=550,left=450');
+        prozor.document.write("<title>Domace zivotinje</title>"+cssLink+opisi[brSlike-1]);
+}
