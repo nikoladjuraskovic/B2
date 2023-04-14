@@ -18,17 +18,38 @@
             </ul>
     </header>
    
+
+    <!--
+        BITNO!!!
+
+        Automatsko Pustanje zvuka na stranici pre nego sto korisnik interact-uje
+        sa veb stranicom sve vise ukida i zato se naredni kod nece mozda korektno izvrsavati
+        na svim browser-ima. Kao sto je npr. metod play() i pause() elementa audio.
+        Greska se ispisuje u console u browser-u.
+
+        O tome vise ovde:
+
+        https://developer.chrome.com/blog/autoplay/
+        https://stackoverflow.com/questions/49930680/how-to-handle-uncaught-in-promise-domexception-play-failed-because-the-use
+        https://gamedev.stackexchange.com/questions/163365/html5-games-play-failed-because-the-user-didnt-interact-with-the-document-fi
+
+        play() metod
+        https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
+
+    -->
+
+
     <main>
-        <audio id="zvuk" src="zvuci/" muted="muted" autoplay="true"></audio>
-            
+        <audio id="zvuk" src="zvuci/" muted="true" autoplay="true"></audio>
+            <!--mozete koristiti onmouseeneter ili onmouseover kao i onmouseleave ili onmouseout, slicni su-->
                 <img src="slike/pas.jpg" onmouseenter="pustiZvuk('pas')" 
                  onmouseleave="zaustavi()" onclick="dodatniOpis(1)"/>            
             
-                <img src="slike/ovca.jpg" onmouseover="pustiZvuk('ovca')" 
-                onmouseout="zaustavi()" onclick="dodatniOpis(2)"/>            
+                <img src="slike/ovca.jpg" onmouseenter="pustiZvuk('ovca')" 
+                onmouseleave="zaustavi()" onclick="dodatniOpis(2)"/>            
             
-                <img src="slike/prase.jpg" onmouseover="pustiZvuk('prase')" 
-                onmouseout="zaustavi()" onclick="dodatniOpis(3)" />
+                <img src="slike/prase.jpg" onmouseenter="pustiZvuk('prase')" 
+                onmouseleave="zaustavi()" onclick="dodatniOpis(3)" />
             
                 <img src="slike/petao.jpg" onmouseover="pustiZvuk('petao')" 
                 onmouseout="zaustavi()" onclick="dodatniOpis(4)"/>
