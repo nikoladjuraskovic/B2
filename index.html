@@ -36,11 +36,17 @@
         play() metod
         https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play
 
+        Mozda pomogne ako u audio tag-u stavite property-je muted="true" i  autoplay="true"
+
+        Meni je zadatak radio u edge browser-u ali u chrome zbog njegovog update ne radi kako treba.
+        
+        NEOPHODNO JE PRVO INTERACT-OVATI sa stranicom, npr. kliknuti bilo gde i onda ce zvukovi moci da
+        se pustaju kako treba.
     -->
 
 
     <main>
-        <audio id="zvuk" src="zvuci/" muted="true" autoplay="true"></audio>
+        <audio id="zvuk" src="zvuci/"></audio>
             <!--mozete koristiti onmouseeneter ili onmouseover kao i onmouseleave ili onmouseout, slicni su-->
                 <img src="slike/pas.jpg" onmouseenter="pustiZvuk('pas')" 
                  onmouseleave="zaustavi()" onclick="dodatniOpis(1)"/>            
