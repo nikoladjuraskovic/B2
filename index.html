@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocetna</title>
     <link rel="stylesheet" type="text/css" href="dizajn.css"/>
-    <script type="text/javascript" src="kod.js"></script>
+    
 </head>
 <body id="pocetna">
     <header>
@@ -19,26 +19,27 @@
     </header>
    
     <main>
-        <audio id="zvuk" src=""></audio>
+        <audio id="zvuk" src="zvuci/" muted="muted" autoplay="true"></audio>
             
-                <img src="slike/pas.jpg" onmouseover="pustiZvuk('pas')"
-                onmouseout="zaustavi()"onclick="dodatniOpis(1)"/>            
+                <img src="slike/pas.jpg" onmouseenter="pustiZvuk('pas')" 
+                 onmouseleave="zaustavi()" onclick="dodatniOpis(1)"/>            
             
-                <img src="slike/ovca.jpg" onmouseover="pustiZvuk('ovca')"
+                <img src="slike/ovca.jpg" onmouseover="pustiZvuk('ovca')" 
                 onmouseout="zaustavi()" onclick="dodatniOpis(2)"/>            
             
-                <img src="slike/prase.jpg" onmouseover="pustiZvuk('prase')"
+                <img src="slike/prase.jpg" onmouseover="pustiZvuk('prase')" 
                 onmouseout="zaustavi()" onclick="dodatniOpis(3)" />
             
-                <img src="slike/petao.jpg" onmouseover="pustiZvuk('petao')"
+                <img src="slike/petao.jpg" onmouseover="pustiZvuk('petao')" 
                 onmouseout="zaustavi()" onclick="dodatniOpis(4)"/>
             
-                <img src="slike/krava.jpg" onmouseover="pustiZvuk('krava')"
+                <img src="slike/krava.jpg" onmouseover="pustiZvuk('krava')" 
                 onmouseout="zaustavi()" onclick="dodatniOpis(5)"/>
 
     </main>
     <footer>
         <p>Copyright &copy Предшколска Установа "Срећно дете"</p>
     </footer>
+    <script src="funkcionalnost.js"></script>
 </body>
 </html>

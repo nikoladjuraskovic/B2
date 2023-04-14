@@ -92,3 +92,13 @@ footer p
 {
     color:rgb(233, 209, 183);
 }
+
+
+#naslov{
+  text-shadow: rgb(28, 27, 24) 1px 0 10px;
+}
+
+
+#prozor{
+  background-color: white;
+}
