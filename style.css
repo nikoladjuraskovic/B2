@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url("slike/farma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(242, 243, 157);
+    text-shadow: 1px 1px 3px black;
+    margin: 20px;
+}
+
+ul {
+   list-style: none;
+   display: flex;
+   justify-content: center; 
+}
+
+li {
+    background-color: rgb(242, 243, 157);
+    color: rgb(60, 24, 38);
+    border-right: 1px solid rgb(60, 24, 38);
+    padding: 20px 80px;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(60, 24, 38);
+}
+
+.izabrana {
+    background-color: rgb(60, 24, 38);
+}
+
+.izabrana > a {
+    color: rgb(242, 243, 157);
+}
+
+.slike {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid rgb(242, 243, 157);
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(60, 24, 38);
+    position: absolute;
+    bottom: 0px;   
+}
+
+footer p {
+    text-align: center;
+    font-size: larger;
+    color: rgb(214, 191, 163);
+    padding: 30px;  
+}
+
+#autor-uputstvo {
+    background-color: rgb(242, 243, 157);
+}
+
+/*stilovi za prozor*/
+
+body#prozor {
+    background: none;
+}
+
+h1#naslov {
+    color:rgb(60, 24, 38);
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.opis {
+    text-align: center;
+}
+
+
+
+
